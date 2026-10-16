@@ -1,13 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simulación Avanzada de Colisiones</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación con Fondo</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-image: url('wp.jpg'); /* <-- Cambia esto por el nombre de tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        canvas {
+            display: block;
+            background: transparent;
+        }
+    </style>
 </head>
 <body>
-    <canvas id="canvas">Tu navegador no admite el elemento canvas.</canvas>
-    <script src="./colision.js"></script>
+
+    <canvas id="canvas"></canvas>
+
+    <!-- Tu código de JavaScript de la simulación -->
+    <script src="colision.js"></script>
 </body>
 </html>
